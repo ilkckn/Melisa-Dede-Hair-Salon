@@ -1,0 +1,296 @@
+.left {
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 5rem;
+
+  .first {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--gold);
+    text-transform: uppercase;
+
+    span {
+      width: 2rem;
+      height: 0.1rem;
+      background-color: var(--gold);
+    }
+
+    h4 {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-family: var(--font2);
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+
+      span {
+        width: 1rem;
+        height: 0.1rem;
+        background-color: var(--gold);
+      }
+    }
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    line-height: 7rem;
+
+    h1:nth-child(1),
+    h1:nth-child(3) {
+      font-family: var(--font1);
+      font-size: 7rem;
+      font-weight: 300;
+      color: var(--cream);
+    }
+
+    span {
+      color: var(--gold);
+      font-style: italic;
+      font-size: 7rem;
+      font-weight: 300;
+      font-family: var(--font1);
+    }
+  }
+
+  .third {
+    p {
+      font-family: var(--font2);
+      font-size: 1.6rem;
+      color: var(--warm-gray);
+      width: 80%;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 2rem;
+
+    .appointment {
+      padding: 1rem 2rem;
+      background-color: var(--gold);
+      color: var(--cream);
+      font-family: var(--font2);
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: var(--gold-light);
+      }
+    }
+
+    .services {
+      padding: 1rem 2rem;
+      background-color: transparent;
+      color: var(--cream);
+      font-family: var(--font2);
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border: 1px solid var(--cream);
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: var(--cream);
+        color: var(--dark);
+      }
+    }
+  }
+}
+
+/* ── 1024px ── */
+@media (max-width: 1024px) {
+  .left {
+    padding: 2rem 4rem;
+
+    .second {
+      line-height: 6rem;
+
+      h1:nth-child(1),
+      h1:nth-child(3) {
+        font-size: 6rem;
+      }
+
+      span {
+        font-size: 6rem;
+      }
+    }
+
+    .third p {
+      font-size: 1.5rem;
+      width: 90%;
+    }
+  }
+}
+
+/* ── 820px ── */
+@media (max-width: 820px) {
+  .left {
+    padding: 2rem 4rem;
+    gap: 1.8rem;
+
+    .second {
+      line-height: 5.5rem;
+
+      h1:nth-child(1),
+      h1:nth-child(3) {
+        font-size: 5.5rem;
+      }
+
+      span {
+        font-size: 5.5rem;
+      }
+    }
+
+    .third p {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* ── 768px ── */
+@media (max-width: 768px) {
+  .left {
+    padding: 4rem 3rem;
+    gap: 1.6rem;
+
+    .first h4 {
+      font-size: 1.2rem;
+    }
+
+    .second {
+      line-height: 5rem;
+
+      h1:nth-child(1),
+      h1:nth-child(3) {
+        font-size: 5rem;
+      }
+
+      span {
+        font-size: 5rem;
+      }
+    }
+
+    .third p {
+      font-size: 1.4rem;
+    }
+
+    .buttons {
+      gap: 1.5rem;
+
+      .appointment,
+      .services {
+        font-size: 1.4rem;
+        padding: 0.9rem 1.8rem;
+      }
+    }
+  }
+}
+
+/* ── 430px ── */
+@media (max-width: 430px) {
+  .left {
+    padding: 4rem 2.5rem;
+    gap: 1.5rem;
+
+    .first h4 {
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .second {
+      line-height: 4rem;
+
+      h1:nth-child(1),
+      h1:nth-child(3) {
+        font-size: 4rem;
+      }
+
+      span {
+        font-size: 4rem;
+      }
+    }
+
+    .third p {
+      font-size: 1.4rem;
+      width: 100%;
+    }
+
+    .buttons {
+      flex-direction: column;
+      gap: 1rem;
+
+      .appointment,
+      .services {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* ── 410px / 390px / 375px ── */
+@media (max-width: 410px) {
+  .left {
+    padding: 3.5rem 2rem;
+
+    .second {
+      line-height: 3.8rem;
+
+      h1:nth-child(1),
+      h1:nth-child(3) {
+        font-size: 3.8rem;
+      }
+
+      span {
+        font-size: 3.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .left {
+    padding: 3rem 1.8rem;
+    gap: 1.2rem;
+
+    .second {
+      line-height: 3.5rem;
+
+      h1:nth-child(1),
+      h1:nth-child(3) {
+        font-size: 3.5rem;
+      }
+
+      span {
+        font-size: 3.5rem;
+      }
+    }
+
+    .third p {
+      font-size: 1.3rem;
+    }
+
+    .buttons {
+      .appointment,
+      .services {
+        font-size: 1.3rem;
+        padding: 0.9rem 1.6rem;
+      }
+    }
+  }
+}

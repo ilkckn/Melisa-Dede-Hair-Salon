@@ -1,0 +1,72 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .service-page-top {
+    width: 100%;
+    padding: 5rem 5rem;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .our-craft {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      span {
+        width: 3rem;
+        height: 0.1rem;
+        background-color: var(--gold);
+        display: inline-block;
+      }
+
+      p {
+        font-family: var(--font2);
+        font-size: 1.4rem;
+        color: var(--gold);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-transform: capitalize;
+      line-height: 7rem;
+
+      h1 {
+        font-family: var(--font1);
+        font-size: 7rem;
+        font-weight: 400;
+        color: var(--cream);
+        margin-top: 1rem;
+      }
+
+      span {
+        font-family: var(--font1);
+        font-size: 7rem;
+        font-weight: 300;
+        color: var(--gold);
+        font-style: italic;
+      }
+    }
+
+    .bottom-text {
+      font-family: var(--font2);
+      font-size: 1.6rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: var(--warm-gray);
+      margin-top: 2rem;
+      text-align: center;
+      line-height: 1rem;
+    }
+  }
+}

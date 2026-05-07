@@ -1,0 +1,27 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 8.5rem;
+  
+  /* Ekranın ortasından 1280px/2 = 640px sağına git, sonra 3rem içeri gel */
+  left: calc(50% + 640px - 4rem);
+  
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background-color: var(--gold);
+  color: var(--cream);
+  font-size: 2.2rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(184, 151, 106, 0.4);
+
+  &:hover {
+    background-color: var(--gold-light);
+    transform: translateY(-3px);
+  }
+}

@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --dark: #1a1612; /* Ana koyu arka plan */
+  --dark-2: #110e0b; /* Footer */
+  --dark-3: #2a2218; /* Kart arka planı */
+  --cream: #f7f2eb; /* Ana açık renk */
+  --gold: #b8976a; /* Ana vurgu */
+  --gold-light: #d4b896; /* Hover */
+  --warm-gray: #8a7e72; /* İkincil metin */
+  --border: rgba(184, 151, 106, 0.2); /* Çizgiler */
+  --box-color: #eeeae4;
+  --border-color-2: #eeeae4e6;
+  --font1: 'Cormorant Garamond', serif; /* Başlıklar */
+  --font2: 'Jost', sans-serif; /* Paragraflar */
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--cream);
+}
+
+.App {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Sayfalar arasındaki içerik büyüsün, footer alta itilsin */
+.page-content {
+  flex: 1;
+  padding-top: 10rem;
+}
+
