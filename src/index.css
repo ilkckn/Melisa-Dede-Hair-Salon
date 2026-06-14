@@ -9,10 +9,13 @@
 
 :root {
   font-size: 62.5%;
+  --navbar-background: #dabea2;
+  --navbar-link: #3a2a1d;
+  --navbar-link-hover: #a85d3a;
   --dark: #1a1612; /* Ana koyu arka plan */
   --dark-2: #110e0b; /* Footer */
   --dark-3: #2a2218; /* Kart arka planı */
-  --cream: #f7f2eb; /* Ana açık renk */
+  --cream: #f7efe2; /* Ana açık renk */
   --gold: #b8976a; /* Ana vurgu */
   --gold-light: #d4b896; /* Hover */
   --warm-gray: #8a7e72; /* İkincil metin */

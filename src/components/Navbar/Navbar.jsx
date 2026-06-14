@@ -25,9 +25,8 @@ function Navbar() {
         <div className="left">
           <div className="logo">
             <NavLink to="/">
-              <img src={logo} alt="Logo" />
+              <img src="/logo/logo.png" alt="Logo" />
             </NavLink>
-            <span>lanche</span>
           </div>
         </div>
 
@@ -112,11 +111,11 @@ function Navbar() {
                     Book Now
                   </NavLink>
                 </button>
-                <div className="mobile-logo">
+                {/* <div className="mobile-logo">
                   <NavLink to="/" onClick={handleClick}>
                     <img src={mobileLogo} alt="Mobile Logo" />
                   </NavLink>
-                </div>
+                </div>*/}
               </div>
             </>
           )}

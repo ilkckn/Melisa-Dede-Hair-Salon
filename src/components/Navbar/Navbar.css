@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: var(--dark);
+  background-color: var(--navbar-background);
 
   nav {
     max-width: 1280px;
@@ -15,22 +15,21 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5rem;
-    border-bottom: 1px solid var(--gold);
+    /*border-bottom: 1px solid var(--navbar-link);*/
     position: relative;
 
     .left {
       display: flex;
       padding: 2rem 0;
+      background-color: transparent;
 
       .logo {
         display: flex;
         align-items: end;
-        width: 11rem;
-        height: 10rem;
+        width: 9rem;
 
         img {
           width: 100%;
-          height: 100%;
         }
 
         span {
@@ -62,15 +61,13 @@
           transition: color 0.3s ease;
           position: relative;
 
-          &:hover {
-            color: var(--gold);
-          }
-
           a {
             text-decoration: none;
-            color: inherit;
+            color: var(--navbar-link);
+            font-weight: 400;
             letter-spacing: 0.7px;
             position: relative;
+            transition: all 0.3s ease-in-out;
 
             &::after {
               content: "";
@@ -79,7 +76,7 @@
               left: 0;
               width: 0;
               height: 1px;
-              background-color: var(--gold);
+              background-color: var(--navbar-link-hover);
               transition: width 0.3s ease;
             }
 
@@ -90,22 +87,23 @@
               width: 100%;
             }
             &.active {
-              color: var(--gold);
+              color: var(--navbar-link-hover);
             }
           }
         }
 
         .book-now {
           width: 12rem;
+          margin-left: 2rem;
           padding: 0.7rem 1rem;
           background-color: transparent;
-          color: var(--gold);
-          border: 1px solid var(--gold);
-          border-radius: 1px;
-          font-weight: 300;
+          color: var(--navbar-link);
+          border: 2px solid var(--navbar-link);
+          border-radius: 0.3rem;
           cursor: pointer;
           transition: all 0.3s ease;
           font-family: var(--font2);
+          font-weight: 400;
           font-size: 1.5rem;
 
           a {
@@ -113,15 +111,16 @@
             color: inherit;
             letter-spacing: 0.7px;
           }
+
           &:hover {
-            background-color: var(--gold);
-            color: var(--dark);
+            background-color: var(--navbar-link);
+            color: var(--navbar-background);
           }
         }
 
         .burger-icon {
           display: none;
-          color: var(--cream);
+          color: var(--navbar-link);
           font-size: 3rem;
           cursor: pointer;
         }
@@ -201,7 +200,7 @@
 
       .mobile-menu-overlay {
         position: fixed;
-        top: 0;
+        top: 10rem;
         left: 0;
         width: 100%;
         height: 100%;
@@ -216,7 +215,7 @@
         width: 100%;
         height: auto;
         padding: 5rem 0;
-        background-color: var(--dark);
+        background-color: var(--navbar-background);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -229,19 +228,20 @@
           flex-direction: column;
           align-items: center;
           list-style: none;
-          gap: 2rem;
+          gap: 1.5rem;
 
           li {
             display: block !important;
             font-family: var(--font2);
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 300;
-            color: var(--cream);
+            color: var(--navbar-link);
             cursor: pointer;
 
             &:hover {
-              color: var(--gold);
+              color: var(--navbar-link);
             }
+
             a {
               text-decoration: none;
               color: inherit;
@@ -251,11 +251,12 @@
         }
 
         .mobile-book-now {
+          margin-top: 2rem;
           padding: 0.7rem 4rem;
-          background-color: transparent;
-          color: var(--gold);
-          border: 1px solid var(--gold);
-          border-radius: 1px;
+          background-color: var(--navbar-link);
+          color: var(--navbar-background);
+          border: 2px solid var(--navbar-link);
+          border-radius: 0.3rem;
           font-size: 1.5rem;
           font-weight: 300;
           cursor: pointer;
@@ -266,10 +267,6 @@
             text-decoration: none;
             color: inherit;
             letter-spacing: 0.7px;
-          }
-          &:hover {
-            background-color: var(--gold);
-            color: var(--cream);
           }
         }
 
