@@ -12,6 +12,24 @@
   --navbar-background: #dabea2;
   --navbar-link: #3a2a1d;
   --navbar-link-hover: #a85d3a;
+  --footer-background: #dabea2;
+  --footer-link: #3a2a1d;
+  --button-background: #3a2a1d;
+  --border-navbar: #c4a279;
+  --bg-body: #f7f2ea; /* sıcak krem — beyaz değil, paletle uyumlu */
+  --bg-card: #ffffff;
+
+  --sand-50: #f9f5f0;
+  --sand-100: #f0e6db;
+  --sand-200: #e5d1bd;
+  --sand-300: #dabea2; /* base */
+  --sand-400: #cca67f;
+  --sand-500: #be8c5b;
+  --sand-600: #a47341;
+  --sand-700: #805933;
+  --sand-800: #624527;
+  --sand-900: #49331d;
+
   --dark: #1a1612; /* Ana koyu arka plan */
   --dark-2: #110e0b; /* Footer */
   --dark-3: #2a2218; /* Kart arka planı */
@@ -22,14 +40,14 @@
   --border: rgba(184, 151, 106, 0.2); /* Çizgiler */
   --box-color: #eeeae4;
   --border-color-2: #eeeae4e6;
-  --font1: 'Cormorant Garamond', serif; /* Başlıklar */
-  --font2: 'Jost', sans-serif; /* Paragraflar */
+  --font1: "Cormorant Garamond", serif; /* Başlıklar */
+  --font2: "Jost", sans-serif; /* Paragraflar */
 }
 
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--cream);
+  background-color: var(--bg-body);
 }
 
 .App {
@@ -54,4 +72,3 @@ header {
   flex: 1;
   padding-top: 10rem;
 }
-

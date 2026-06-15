@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 3rem 7rem;
-  background-color: var(--dark-3);
-  border-bottom: 1px solid var(--warm-gray);
+  padding: 5rem 7rem;
+  border-bottom: 1px solid var(--sand-400);
+  background-color: var(--sand-100);
 
   .form-heading {
     display: flex;
@@ -14,7 +14,7 @@
     span {
       width: 3rem;
       height: 1px;
-      background-color: var(--cream);
+      background-color: var(--sand-900);
     }
 
     p {
@@ -22,7 +22,7 @@
       font-size: 2rem;
       font-weight: 300;
       letter-spacing: 0.7px;
-      color: var(--cream);
+      color: var(--sand-900);
     }
   }
 
@@ -36,7 +36,8 @@
       display: flex;
       gap: 1.5rem;
 
-      .name, .email {
+      .name,
+      .email {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -46,13 +47,19 @@
           flex: 1;
           padding: 1rem 1.5rem;
           border-radius: 0.3rem;
-          border: 1px solid var(--cream);
+          border: 1px solid var(--sand-300);
           background-color: transparent;
           font-family: var(--font2);
           font-size: 1.3rem;
           font-weight: 400;
           letter-spacing: 1px;
-          color: var(--cream);
+          color: var(--sand-900);
+          transition: all .2s ease-in-out;
+
+          &:focus {
+            outline: none;
+            border:1px solid var(--sand-600);
+          }
         }
 
         label {
@@ -60,7 +67,7 @@
           font-size: 1.5rem;
           font-weight: 400;
           letter-spacing: 1px;
-          color: var(--cream);
+          color: var(--sand-900);
         }
       }
     }
@@ -75,13 +82,19 @@
         flex: 1;
         padding: 1rem 1.5rem;
         border-radius: 0.3rem;
-        border: 1px solid var(--cream);
+        border: 1px solid var(--sand-300);
         background-color: transparent;
         font-family: var(--font2);
         font-size: 1.3rem;
         font-weight: 400;
         letter-spacing: 1px;
-        color: var(--cream);
+        color: var(--sand-900);
+        transition: all .2s ease-in-out;
+
+        &:focus {
+          outline: none;
+          border: 1px solid var(--sand-600);
+        }
       }
 
       label {
@@ -89,7 +102,7 @@
         font-size: 1.5rem;
         font-weight: 400;
         letter-spacing: 1px;
-        color: var(--cream);
+        color: var(--sand-900);
       }
     }
 
@@ -103,14 +116,20 @@
         flex: 1;
         padding: 1rem 1.5rem;
         border-radius: 0.3rem;
-        border: 1px solid var(--cream);
+        border: 1px solid var(--sand-300);
         background-color: transparent;
         font-family: var(--font2);
         font-size: 1.3rem;
         font-weight: 400;
         letter-spacing: 1px;
-        color: var(--cream);
+        color: var(--sand-900);
         resize: vertical;
+        transition: all .2s ease-in-out;
+
+        &:focus {
+          outline: none;
+          border: 1px solid var(--sand-600);
+        }
       }
 
       label {
@@ -118,7 +137,7 @@
         font-size: 1.5rem;
         font-weight: 400;
         letter-spacing: 1px;
-        color: var(--cream);
+        color: var(--sand-900);
       }
     }
 
@@ -128,18 +147,21 @@
       button {
         width: 100%;
         padding: 1rem 0;
-        background-color: var(--gold);
-        color: var(--dark);
+        background-color: var(--sand-400);
+        color: var(--sand-100);
         border: none;
         border-radius: 0.3rem;
         font-family: var(--font2);
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 400;
+        text-transform: uppercase;
         letter-spacing: 1px;
         cursor: pointer;
         transition: all 0.3s ease;
 
-        &:hover { background-color: var(--gold-light); }
+        &:hover {
+          background-color: var(--gold-light);
+        }
       }
     }
 
@@ -167,7 +189,9 @@
   .form-contact-container {
     padding: 3rem 3rem;
 
-    .form-heading p { font-size: 1.8rem; }
+    .form-heading p {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -182,8 +206,13 @@
         gap: 1rem;
       }
 
-      label { font-size: 1.4rem; }
-      input, textarea { font-size: 1.2rem; }
+      label {
+        font-size: 1.4rem;
+      }
+      input,
+      textarea {
+        font-size: 1.2rem;
+      }
     }
   }
 }
@@ -194,14 +223,19 @@
     padding: 2.5rem 2.5rem;
     gap: 1.5rem;
 
-    .form-heading p { font-size: 1.6rem; }
+    .form-heading p {
+      font-size: 1.6rem;
+    }
 
     form {
       gap: 1.2rem;
 
-      label { font-size: 1.3rem; }
+      label {
+        font-size: 1.3rem;
+      }
 
-      input, textarea {
+      input,
+      textarea {
         font-size: 1.2rem;
         padding: 0.9rem 1.2rem;
       }
@@ -217,19 +251,31 @@
 /* ── 375px ── */
 @media (max-width: 375px) {
   .form-contact-container {
-    padding: 2rem 1.8rem;
+    padding: 2rem 4rem;
 
-    .form-heading p { font-size: 1.5rem; }
+    .form-heading {
+      margin-bottom: 1rem;
+      
+    }
+
+    .form-heading p {
+      font-size: 1.6rem;
+    }
 
     form {
-      label { font-size: 1.2rem; }
+      label {
+        font-size: 1.2rem;
+      }
 
-      input, textarea {
+      input,
+      textarea {
         font-size: 1.1rem;
         padding: 0.8rem 1rem;
       }
 
-      .submit button { font-size: 1.3rem; }
+      .submit button {
+        font-size: 1.3rem;
+      }
     }
   }
 }

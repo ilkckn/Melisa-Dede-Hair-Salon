@@ -11,13 +11,13 @@ function LandingServices() {
     <div className="services-container">
       <div className="first">
         <span></span>
-        <h4>what we offer</h4>
+        <h4>was wir bieten</h4>
       </div>
       <div className="second">
-        <h1>Our Services</h1>
+        <h1>Unsere Leistungen</h1>
         <NavLink to="/services">
           <p>
-            All Services <TbArrowNarrowRight className="arrow" />
+            Alle Leistungen <TbArrowNarrowRight className="arrow" />
           </p>
         </NavLink>
       </div>
@@ -26,52 +26,61 @@ function LandingServices() {
           <div className="box-content-top">
             <div className="text">
               <span>01</span>
-              <h2>Women's Cut</h2>
-              <p>Precision cuts tailored to your style and face shape.</p>
+              <h2>Damenschnitt</h2>
+              <p>
+                Präzise Schnitte, abgestimmt auf Ihren Stil und Ihre
+                Gesichtsform.
+              </p>
             </div>
-            <img src={hair} alt="Women's Haircut" />
+            <img src={hair} alt="Damenschnitt" />
           </div>
           <div className="box-content-bottom">
-            <p>from €35</p>
+            <p>ab 35 €</p>
           </div>
         </div>
+
         <div className="box">
           <div className="box-content-top">
             <div className="text">
               <span>02</span>
-              <h2>Men's Cut</h2>
-              <p>Classic and modern cuts, fades and beard grooming.</p>
+              <h2>Herrenschnitt</h2>
+              <p>
+                Klassische und moderne Schnitte, Fades und Bartpflege – sauber
+                ausgeführt und genau auf Ihren Typ abgestimmt.{" "}
+              </p>
             </div>
-            <img src={manHair} alt="Men's Haircut" />
+            <img src={manHair} alt="Herrenschnitt" />
           </div>
           <div className="box-content-bottom">
-            <p>from €25</p>
+            <p>ab 25 €</p>
           </div>
         </div>
+
         <div className="box">
           <div className="box-content-top">
             <div className="text">
               <span>03</span>
-              <h2>Color & Highlights</h2>
-              <p>Transform your look with our expert color services.</p>
+              <h2>Farbe & Strähnen</h2>
+              <p>Verwandeln Sie Ihren Look mit professionellen Farbservices.</p>
             </div>
-            <img src={colorHighlights} alt="Color & Highlights" />
+            <img src={colorHighlights} alt="Farbe & Strähnen" />
           </div>
           <div className="box-content-bottom">
-            <p>from €45</p>
+            <p>ab 45 €</p>
           </div>
         </div>
+
         <div className="box">
           <div className="box-content-top">
             <div className="text">
               <span>04</span>
-              <h2>Treatment & Care</h2>
-              <p>Deep conditioning and repair for all hair types.</p>
+              <h2>Pflege & Treatment</h2>
+              <p>Intensivpflege und Reparatur für jeden Haartyp.</p>
             </div>
-            <img src={treatmentCare} alt="Treatment & Care" />
+            <img src={treatmentCare} alt="Pflege & Treatment" />
           </div>
           <div className="box-content-bottom">
-            <p>from €30</p>
+            <p>ab 30 €</p>
           </div>
         </div>
       </div>

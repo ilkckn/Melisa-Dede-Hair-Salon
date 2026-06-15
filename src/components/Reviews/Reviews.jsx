@@ -33,13 +33,13 @@ function Reviews() {
     <div className="reviews-container">
       <div className="top">
         <span></span>
-        <h4>what clients say</h4>
+        <h4>was kunden sagen</h4>
       </div>
       <div className="middle">
-        <h1>Reviews</h1>
+        <h1>Bewertungen</h1>
         <div className="review-points">
-          <p>4.8</p>
-          <span>/ on Google</span>
+          <p>4,8</p>
+          <span>/ bei Google</span>
         </div>
       </div>
       <div className="bottom">

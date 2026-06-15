@@ -4,19 +4,19 @@
   gap: 2rem;
   width: 100%;
   padding: 8rem 5rem;
-  background-color: var(--dark);
+  background-color: var(--navbar-background);
 
   .top {
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: var(--gold);
+    color: var(--navbar-link);
     text-transform: uppercase;
 
     span {
       width: 3rem;
       height: 0.1rem;
-      background-color: var(--gold);
+      background-color: var(--navbar-link);
     }
 
     h4 {
@@ -27,6 +27,7 @@
       font-size: 1.3rem;
       font-weight: 500;
       letter-spacing: 2px;
+      color: var(--navbar-link);
     }
   }
 
@@ -36,11 +37,12 @@
     align-items: center;
     flex-wrap: wrap;
 
+    /* FIX: bej zemin üzerinde krem soluk kalıyordu → espresso */
     h1 {
       font-family: var(--font1);
       font-size: 4.5rem;
       font-weight: 300;
-      color: var(--cream);
+      color: var(--navbar-link);
       letter-spacing: 1px;
     }
 
@@ -55,12 +57,12 @@
         font-size: 1.5rem;
         font-weight: 400;
         letter-spacing: 0.7px;
-        color: var(--warm-gray);
+        color: var(--navbar-link);
         cursor: pointer;
         transition: all 0.3s ease;
 
         &:hover {
-          color: var(--gold-light);
+          color: var(--gold);
         }
 
         .arrow {
@@ -79,7 +81,7 @@
       width: 100%;
       aspect-ratio: 1;
       background-color: var(--dark-3);
-      border: 1px solid var(--dark-3);
+      border: 1px solid var(--navbar-link);
       cursor: pointer;
       overflow: hidden;
       transition: all 0.3s ease;

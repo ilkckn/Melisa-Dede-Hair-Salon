@@ -45,21 +45,21 @@ function FormAppointment({ selectedService, onSubmitSuccess }) {
       <form action="" onSubmit={handleSubmit}>
         <div className="first-last-name">
           <div className="first-name">
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="firstName">Vorname</label>
             <input
               type="text"
               id="firstName"
-              placeholder="First Name"
+              placeholder="Vorname"
               value={formData.firstName}
               onChange={handleChange}
             />
           </div>
           <div className="last-name">
-            <label htmlFor="lastName">Last Name</label>
+            <label htmlFor="lastName">Nachname</label>
             <input
               type="text"
               id="lastName"
-              placeholder="Last Name"
+              placeholder="Nachname"
               value={formData.lastName}
               onChange={handleChange}
             />
@@ -75,15 +75,15 @@ function FormAppointment({ selectedService, onSubmitSuccess }) {
             onChange={handleChange}
           />
         </div>
-        <div className="service-stylist">
+        {/* <div className="service-stylist">
           <div className="stylist">
-            <label htmlFor="stylist">Stylist</label>
+            <label htmlFor="stylist">Stylist(in)</label>
             <select
               id="stylist"
               value={formData.stylist}
               onChange={handleChange}
             >
-              <option value="">Select a Stylist</option>
+              <option value="">Wählen Sie einen Stylisten aus</option>
               <option value="sophie-müller">Sophie Müller</option>
               <option value="marc-bauer">Marc Bauer</option>
               <option value="lena-weber">Lena Weber</option>
@@ -92,10 +92,10 @@ function FormAppointment({ selectedService, onSubmitSuccess }) {
               <option value="sarah-johnson">Sarah Johnson</option>
             </select>
           </div>
-        </div>
+        </div>*/}
         <div className="date-time">
           <div className="date">
-            <label htmlFor="date">Date</label>
+            <label htmlFor="date">Datum</label>
             <input
               type="date"
               id="date"
@@ -104,7 +104,7 @@ function FormAppointment({ selectedService, onSubmitSuccess }) {
             />
           </div>
           <div className="time">
-            <label htmlFor="time">Time</label>
+            <label htmlFor="time">Zeit</label>
             <input
               type="time"
               id="time"
@@ -114,15 +114,17 @@ function FormAppointment({ selectedService, onSubmitSuccess }) {
           </div>
         </div>
         <div className="submit-button">
-          <button type="submit">Confirm Appointment</button>
+          <button type="submit">Termin bestätigen</button>
         </div>
         <div className="confirm-text">
           {!isSubmitted ? (
-            <p>We'll confirm your booking within 2 hours by email.</p>
+            <p>
+              Wir bestätigen Ihre Buchung innerhalb von 2 Stunden per E-Mail.
+            </p>
           ) : (
             <p>
-              ✅ Your appointment has been received! We'll confirm within 2
-              hours.{" "}
+              ✅ Ihr Terminwunsch ist bei uns eingegangen! Wir werden ihn
+              innerhalb von 2 Stunden bestätigen.
             </p>
           )}
         </div>

@@ -1,37 +1,45 @@
 import { NavLink } from "react-router-dom";
 import "./OurTeam.css";
-import our_team_data from "./OurTeamData.js";
-import { TbArrowNarrowRight } from "react-icons/tb";
+// import aboutImg from "../../assets/images/about/melisa.jpg";
 
 function OurTeam() {
   return (
-    <div className="our-team-container">
+    <div className="about-me-container">
       <div className="top">
         <span></span>
-        <h4>meet the artists</h4>
+        <h4>Über mich</h4>
       </div>
-      <div className="middle">
-        <h1>Our Team</h1>
-        <NavLink to="/team">
+
+      <div className="content">
+        <div className="about-img">
+          <img src="/dresser/dresser.jpg" alt="Melisa Dede" />
+        </div>
+
+        <div className="about-info">
+          <h1>Melisa Dede</h1>
+          <h3>Stylistin &amp; Inhaberin</h3>
+
           <p>
-            All Team <TbArrowNarrowRight className="arrow" />
+            Seit über 10 Jahren bin ich mit Leidenschaft Friseurin. In meinem
+            Salon arbeite ich allein – das bedeutet für Sie: meine volle
+            Aufmerksamkeit, von der ersten Beratung bis zum letzten Schnitt.
           </p>
-        </NavLink>
-      </div>
-      <div className="bottom">
-        {our_team_data.slice(0, 4).map((member) => (
-          <div className="team-member" key={member.id}>
-            <div className="team-img">
-              <img src={member.image} alt={member.name} />
-            </div>
-            <div className="team-info">
-              <h2>{member.name}</h2>
-              <h3>{member.position}</h3>
-              <p>{member.bio}</p>
-              <span>{member.experience} years of experience</span>
-            </div>
+          <p>
+            Ob Schnitt, Farbe oder Pflege – jeder Termin wird individuell auf Sie
+            abgestimmt. Auf Wunsch sorge ich gerne für eine ruhige, private
+            Atmosphäre, in der Sie sich rundum wohlfühlen.
+          </p>
+
+          <div className="badges">
+            <span>10+ Jahre Erfahrung</span>
+            <span>Schnitt · Farbe · Styling</span>
+            <span>Damen &amp; Herren</span>
           </div>
-        ))}
+
+          <NavLink to="/appointment" className="cta">
+            Termin buchen
+          </NavLink>
+        </div>
       </div>
     </div>
   );

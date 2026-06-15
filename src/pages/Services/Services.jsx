@@ -7,13 +7,13 @@ function Services() {
       <div className="service-page-top">
         <div className="our-craft">
           <span></span>
-          <p>our craft</p>
+          <p>unser handwerk</p>
         </div>
         <div className="header">
-          <h1>services &</h1>
-          <span>pricing</span>
+          <h1>Leistungen &</h1>
+          <span>Preise</span>
         </div>
-        <p className="bottom-text">Transparent pricing. No surprises.</p>
+        <p className="bottom-text">Transparente Preise. Keine Überraschungen.</p>
       </div>
 
       <div className="bottom">

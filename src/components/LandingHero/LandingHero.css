@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem 5rem;
+  padding: 8rem 5rem;
 
   .first {
     display: flex;
@@ -66,9 +66,9 @@
       font-family: var(--font2);
       font-size: 1.6rem;
       font-weight: 400;
-      letter-spacing: .4px;
+      letter-spacing: 0.4px;
       color: var(--navbar-link);
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -78,7 +78,7 @@
 
     .appointment {
       padding: 1rem 2rem;
-      background-color: var(--gold);
+      background-color: var(--button-background);
       color: var(--cream);
       font-family: var(--font2);
       font-size: 1.5rem;
@@ -93,21 +93,24 @@
       }
     }
 
+    /* FIX: bej zemin üzerinde krem görünmüyordu → espresso yapıldı */
     .services {
       padding: 1rem 2rem;
       background-color: transparent;
-      color: var(--cream);
+      color: var(--navbar-link);
       font-family: var(--font2);
       font-size: 1.5rem;
       font-weight: 500;
-      letter-spacing: 1px;
-      border: 1px solid var(--cream);
+      letter-spacing: 2px;
+      border: 1px solid var(--navbar-link);
       cursor: pointer;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 
       &:hover {
-        background-color: var(--cream);
-        color: var(--dark);
+        background-color: var(--navbar-link);
+        color: var(--cream);
       }
     }
   }

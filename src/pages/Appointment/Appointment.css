@@ -10,7 +10,7 @@
     align-items: center;
     gap: 1rem;
     padding: 5rem 5rem;
-    background-color: var(--dark);
+    background-color: var(--navbar-background);
 
     .reserve-your-time {
       display: flex;
@@ -19,16 +19,16 @@
 
       span {
         width: 3rem;
-        height: 1px;
-        background-color: var(--gold);
+        height: .1rem;
+        background-color: var(--navbar-link);
       }
 
       p {
         font-family: var(--font2);
-        font-size: 1.7rem;
-        font-weight: 300;
+        font-size: 1.6rem;
+        font-weight: 400;
         letter-spacing: 0.7px;
-        color: var(--gold);
+        color: var(--navbar-link);
       }
     }
 
@@ -41,24 +41,24 @@
       h1:nth-child(1) {
         font-family: var(--font1);
         font-size: 7rem;
-        font-weight: 400;
-        color: var(--cream);
+        font-weight: 500;
+        color: var(--navbar-link);
       }
 
       h1:nth-child(2) {
         font-family: var(--font1);
         font-size: 7rem;
-        font-weight: 400;
-        color: var(--gold);
+        font-weight: 500;
+        color: var(--cream);
       }
     }
 
     .appointment-description {
       font-family: var(--font2);
-      font-size: 1.6rem;
+      font-size: 1.75rem;
       font-weight: 300;
       letter-spacing: 0.7px;
-      color: var(--cream);
+      color: var(--navbar-link);
       text-align: center;
       max-width: 700px;
       margin-top: 1.5rem;
@@ -75,7 +75,7 @@
       flex-direction: column;
       gap: 5rem;
       padding: 7rem 5rem;
-      background-color: var(--dark-3);
+      background-color: var(--sand-400);
 
       .contact-location {
         display: flex;
@@ -179,7 +179,7 @@
         color: var(--dark);
         margin-bottom: 2rem;
 
-        span { color: var(--gold); }
+        span { color: var(--sand-500); }
       }
 
       .select-a-service {
@@ -195,7 +195,7 @@
           letter-spacing: 0.7px;
           color: var(--dark);
           padding-bottom: 0.7rem;
-          border-bottom: 1px solid var(--gold-light);
+          border-bottom: 1px solid var(--sand-500);
         }
 
         .appointment-services {
@@ -207,20 +207,21 @@
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-            padding: 0.7rem 1.5rem;
+            padding: 0.7rem 2rem;
             cursor: pointer;
             background-color: transparent;
             transition: all 0.3s ease;
-            border: 1px solid var(--border);
+            border: 1px solid var(--sand-200);
+            border-radius: .2rem;
 
             &:hover { background-color: var(--gold-light); }
 
             p {
               font-family: var(--font2);
-              font-size: 1.4rem;
+              font-size: 1.5rem;
               font-weight: 400;
               letter-spacing: 0.7px;
-              color: var(--dark);
+              color: var(--sand-900);
             }
 
             span {
@@ -232,7 +233,7 @@
             }
 
             &.active {
-              background-color: var(--gold);
+              background-color: var(--sand-400);
               p { color: var(--cream); }
             }
           }

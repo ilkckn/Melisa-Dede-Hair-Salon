@@ -33,7 +33,7 @@ function FormContact() {
     <div className="form-contact-container">
       <div className="form-heading">
         <span></span>
-        <p>Send a Message</p>
+        <p>Nachricht senden</p>
       </div>
       <form action="" onSubmit={handleSubmit}>
         <div className="name-email">
@@ -52,7 +52,7 @@ function FormContact() {
           </div>
         </div>
         <div className="subject">
-          <label htmlFor="subject">Subject</label>
+          <label htmlFor="subject">Thema</label>
           <input
             type="text"
             id="subject"
@@ -61,7 +61,7 @@ function FormContact() {
           />
         </div>
         <div className="message">
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">Nachricht</label>
           <textarea
             id="message"
             rows="5"
@@ -70,10 +70,10 @@ function FormContact() {
           ></textarea>
         </div>
         <div className="submit">
-          <button type="submit">Send Message</button>
+          <button type="submit">Nachricht senden</button>
         </div>
         {isSubmitting && (
-          <p className="success-message">Message sent successfully!</p>
+          <p className="success-message">Nachricht erfolgreich gesendet!</p>
         )}
       </form>
     </div>

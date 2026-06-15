@@ -8,23 +8,23 @@ function LandingHero() {
         <article className="first">
           <span></span>
           <h4>
-            premium hair salon <span></span> freiburg
+            Premium Friseursalon <span></span> Freiburg
           </h4>
         </article>
         <article className="second">
-          <h1>The art of</h1>
-          <span>beautiful</span>
-          <h1>Hair.</h1>
+          <h1>Die Kunst</h1>
+          <span>schöner</span>
+          <h1>Haare.</h1>
         </article>
         <article className="third">
           <p>
-            Where precision meets elegance. For women and men — every cut, every
-            color, every visit is crafted just for you.
+            Wo Präzision auf Eleganz trifft. Für Damen und Herren – jeder
+            Schnitt, jede Farbe, jeder Besuch wird individuell für Sie gestaltet.
           </p>
         </article>
         <div className="buttons">
-          <button className="appointment">Book an Appointment</button>
-          <button className="services">View Services</button>
+          <button className="appointment">Termin buchen</button>
+          <button className="services">Leistungen ansehen</button>
         </div>
       </div>
       <div className="right">

@@ -38,7 +38,7 @@
           font-size: 1.4rem;
           font-weight: 400;
           letter-spacing: 0.7px;
-          color: var(--dark);
+          color: var(--sand-900);
         }
       }
     }
@@ -67,7 +67,7 @@
         font-size: 1.4rem;
         font-weight: 400;
         letter-spacing: 0.7px;
-        color: var(--dark);
+        color: var(--sand-900);
       }
     }
 
@@ -100,7 +100,7 @@
           font-size: 1.4rem;
           font-weight: 400;
           letter-spacing: 0.7px;
-          color: var(--dark);
+          color: var(--sand-900);
         }
       }
     }
@@ -126,7 +126,7 @@
           font-size: 1.3rem;
           font-weight: 400;
           letter-spacing: 1px;
-          color: var(--dark);
+          color: var(--sand-900);
         }
 
         label {
@@ -134,7 +134,7 @@
           font-size: 1.4rem;
           font-weight: 400;
           letter-spacing: 0.7px;
-          color: var(--dark);
+          color: var(--sand-900);
         }
       }
     }
@@ -144,13 +144,14 @@
 
       button {
         width: 100%;
-        padding: 1rem 0;
-        background-color: var(--gold);
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        background-color: var(--sand-400);
         color: var(--cream);
         border: none;
         border-radius: 0.3rem;
         font-family: var(--font2);
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 400;
         letter-spacing: 0.7px;
         cursor: pointer;

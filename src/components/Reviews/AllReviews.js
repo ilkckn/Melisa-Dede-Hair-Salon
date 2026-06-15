@@ -1,42 +1,42 @@
-const reviewsData = {
+const reviewData = {
   reviews: [
     {
       id: 1,
-      name: "Anna Schmidt",
-      comment:
-        "Sophie transformed my hair completely. Best balayage I've ever had — I get compliments everywhere I go.",
-      rating: 5,
       name_icon: "AS",
-      date: "2024-05-15",
+      name: "Anna Schmidt",
+      date: "vor 2 Wochen",
+      comment:
+        "Sehr zufrieden! Melisa hat genau verstanden, was ich wollte. Tolle Beratung und eine sehr angenehme, ruhige Atmosphäre.",
+      rating: 5,
     },
     {
       id: 2,
-      name: "Thomas Bauer",
+      name_icon: "MK",
+      name: "Markus Keller",
+      date: "vor 1 Monat",
       comment:
-        "Best men's haircut in Freiburg, no question. Marc really listens and always delivers exactly what I want.",
-      rating: 4.5,
-      name_icon: "TB",
-      date: "2024-06-01",
+        "Endlich ein Friseur, bei dem man sich Zeit nimmt. Der Schnitt sitzt perfekt, komme gerne wieder.",
+      rating: 5,
     },
     {
       id: 3,
-      name: "Emily Johnson",
+      name_icon: "LB",
+      name: "Lena Bauer",
+      date: "vor 3 Wochen",
       comment:
-        "The atmosphere, the service, the result — everything is exceptional. This is the only salon I'll ever go to.",
-      rating: 4,
-      name_icon: "EJ",
-      date: "2024-05-20",
+        "Wunderschöne Farbe und top Pflege-Beratung. Man merkt, dass hier mit Herz gearbeitet wird.",
+      rating: 4.5,
     },
     {
       id: 4,
-      name: "Michael Brown",
+      name_icon: "FW",
+      name: "Fatima Weber",
+      date: "vor 1 Woche",
       comment:
-        "Incredible attention to detail and a fantastic experience from start to finish. Highly recommended!",
+        "Ich habe mich sofort wohlgefühlt. Auf meinen Wunsch nach einer privaten Atmosphäre wurde sehr nett eingegangen. Klare Empfehlung!",
       rating: 5,
-      name_icon: "MB",
-      date: "2024-06-10",
-    }
+    },
   ],
 };
 
-export default reviewsData;
+export default reviewData;

@@ -9,13 +9,13 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: var(--gold);
+    color: var(--navbar-link);
     text-transform: uppercase;
 
     span {
       width: 3rem;
       height: 0.1rem;
-      background-color: var(--gold);
+      background-color: var(--navbar-link);
     }
 
     h4 {
@@ -25,6 +25,7 @@
       font-family: var(--font2);
       font-size: 1.3rem;
       font-weight: 500;
+      color: var(--navbar-link);
       letter-spacing: 2px;
     }
   }
@@ -38,7 +39,7 @@
       font-family: var(--font1);
       font-size: 4.5rem;
       font-weight: 300;
-      color: var(--dark);
+      color: var(--navbar-link);
       letter-spacing: 1px;
     }
 
@@ -50,12 +51,12 @@
         font-size: 3rem;
         font-family: var(--font1);
         font-weight: 500;
-        color: var(--dark);
+        color: var(--navbar-link);
       }
 
       span {
         font-size: 1.3rem;
-        color: var(--dark);
+        color: var(--navbar-link);
         transform: translateY(0.5rem);
       }
     }
@@ -98,7 +99,7 @@
               width: 4rem;
               height: 4rem;
               color: white;
-              background-color: var(--dark-3);
+              background-color: var(--navbar-link);
               border-radius: 50%;
               display: flex;
               align-items: center;

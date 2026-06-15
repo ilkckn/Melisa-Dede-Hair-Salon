@@ -5,7 +5,8 @@ function Footer() {
     <div className="footer-main">
       <div className="content">
         <div className="left">
-          <h1>Blanche</h1>
+          <h1>Melisa Dede</h1>
+          <p>Hair & Beauty</p>
         </div>
         <div className="middle">
           <p>© 2024 Blanche. All rights reserved.</p>
