@@ -132,6 +132,35 @@
           font-weight: 300;
           letter-spacing: 0.5px;
           color: var(--dark-3);
+        
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .read-more-link {
+          align-self: flex-start;
+          font-family: var(--font2);
+          font-size: 1.3rem;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          color: var(--gold);
+          text-decoration: underline;
+          text-underline-offset: 3px;
+          transition: color 0.2s ease;
+        
+          &:hover {
+            color: var(--navbar-link);
+          }
+        }
+
+        .service {
+          font-family: var(--font2);
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: var(--dark-3);
         }
 
         .rating {
@@ -167,6 +196,19 @@
           }
         }
       }
+    }
+
+    .view-all {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-block: 2rem;
+      font-size: 1.6rem;
+      font-family: var(--font2);
+      text-decoration: underline;
+      cursor: pointer;
+      color: var(--dark-3);
     }
   }
 }

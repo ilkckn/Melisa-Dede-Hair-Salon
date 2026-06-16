@@ -12,7 +12,7 @@ function OurTeam() {
 
       <div className="content">
         <div className="about-img">
-          <img src="/dresser/dresser.jpg" alt="Melisa Dede" />
+          <img src="/dresser/dresser-1.jpg" alt="Melisa Dede" />
         </div>
 
         <div className="about-info">

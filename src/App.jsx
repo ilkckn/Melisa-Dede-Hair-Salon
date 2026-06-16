@@ -9,6 +9,7 @@ import Team from "./pages/Team/Team";
 import Gallery from "./pages/Gallery/Gallery";
 import Appointment from "./pages/Appointment/Appointment";
 import Contact from "./pages/Contact/Contact";
+import AllReviews from "./components/AllReviews/AllReviews";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -53,6 +54,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/reviews" element={<AllReviews />} />
           </Routes>
         </section>
       </main>

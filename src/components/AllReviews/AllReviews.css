@@ -1,0 +1,495 @@
+.all-reviews-container {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+
+  .header {
+    width: 100%;
+    padding-inline: 4rem;
+    padding-block: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > h1 {
+      font-family: var(--font1);
+      font-size: 4.5rem;
+      font-weight: 600;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    & > p {
+      text-align: center;
+      font-size: 1.8rem;
+      font-family: var(--font2);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 2.8rem;
+      letter-spacing: 0.5px;
+      width: 80%;
+    }
+  }
+
+  .best-review {
+    width: 90%;
+    background-color: var(--bg-card);
+    padding-inline: 4rem;
+    padding-block: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > span {
+      color: var(--sand-400);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    & > p:nth-child(2) {
+      font-size: 1.9rem;
+      font-family: var(--font2);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 3rem;
+      letter-spacing: 0.5px;
+      width: 80%;
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    & > h2 {
+      font-family: var(--font1);
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--sand-600);
+    }
+
+    & > p:nth-child(4) {
+      font-size: 2rem;
+      font-family: var(--font1);
+      font-weight: 300;
+      line-height: 2.8rem;
+      letter-spacing: 0.5px;
+      width: 80%;
+      text-align: center;
+    }
+  }
+
+  .all-reviews {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+
+    gap: 2rem;
+    padding-inline: 6rem;
+    padding-block: 4rem;
+
+    .box {
+      background-color: var(--bg-card);
+      padding-inline: 4rem;
+      padding-block: 4rem;
+
+      .name-icon-date {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+
+        .name-icon {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          & > p {
+            width: 3rem;
+            height: 3rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--sand-400);
+            padding-inline: 1rem;
+            padding-block: 1rem;
+            border-radius: 6rem;
+            font-size: 1.5rem;
+            font-family: var(--font2);
+            color: var(--sand-100);
+          }
+
+          & > h2 {
+            font-family: var(--font2);
+            font-size: 1.4rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--sand-900);
+          }
+        }
+
+        & > p {
+          font-family: var(--font2);
+          font-size: 1.5rem;
+          color: var(--sand-600);
+        }
+      }
+
+      & > span {
+        font-family: var(--font2);
+        font-size: 1.5rem;
+        color: var(--sand-600);
+      }
+
+      & > p {
+        font-family: var(--font2);
+        font-size: 1.45rem;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        margin-top: 1rem;
+      }
+
+      & > p:nth-child(4) {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: var(--font2);
+        color: var(--sand-600);
+      }
+    }
+  }
+
+  .show-more-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 6rem;
+
+    .show-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: fit-content;
+      background-color: transparent;
+      color: var(--sand-900);
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 6rem;
+      font-size: 1.5rem;
+      font-family: var(--font2);
+      text-transform: uppercase;
+      /*text-decoration: underline;*/
+      cursor: pointer;
+      transition: all 0.3s;
+
+      & > svg {
+        font-size: 2rem;
+      }
+
+      &:hover {
+        color: var(--sand-500);
+      }
+    }
+
+    .show-less {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: fit-content;
+      background-color: transparent;
+      color: var(--sand-900);
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 6rem;
+      font-size: 1.5rem;
+      font-family: var(--font2);
+      text-transform: uppercase;
+      /*text-decoration: underline;*/
+      cursor: pointer;
+      transition: all 0.3s;
+
+      & > svg {
+        font-size: 2rem;
+      }
+
+      &:hover {
+        color: var(--sand-500);
+      }
+    }
+  }
+
+  .your-journey {
+    width: 90%;
+    padding-inline: 6rem;
+    padding-block: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sand-300);
+    margin-top: 4rem;
+
+    & > h1 {
+      width: 100%;
+      text-align: center;
+      font-family: var(--font1);
+      font-size: 3.3rem;
+      font-weight: 400;
+      letter-spacing: -0.6px;
+    }
+
+    .btns {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 3rem;
+
+      & > button {
+        width: fit-content;
+        background-color: var(--sand-100);
+        color: var(--sand-900);
+        padding: 1.2rem 4rem;
+        border: 1px solid var(--sand-100);
+        border-radius: 0.2rem;
+        font-size: 1.7rem;
+        font-weight: 400;
+        font-family: var(--font2);
+        text-transform: capitalize;
+        letter-spacing: -0.1px;
+        cursor: pointer;
+        transition: all 0.3s;
+        z-index: 1;
+
+        &:hover {
+          background-color: var(--sand-900);
+          color: var(--sand-100);
+          border-color: var(--sand-900);
+        }
+      }
+
+      & > button:last-child {
+        background-color: transparent;
+        border: 1px solid var(--sand-900);
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: var(--sand-900);
+          color: var(--sand-100);
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.3s;
+          z-index: -1;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+/* =====================================================================
+   TABLET & KLEINERE DESKTOPS — 768px und darunter
+   Grid wird einspaltig, Abstände & Schriftgrößen werden reduziert.
+   ===================================================================== */
+@media (max-width: 768px) {
+  .all-reviews-container {
+    padding-bottom: 3rem;
+  }
+
+  .all-reviews-container .header {
+    padding-block: 6rem;
+    padding-inline: 2.5rem;
+  }
+  .all-reviews-container .header > h1 {
+    font-size: 3.4rem;
+  }
+  .all-reviews-container .header > p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    width: 100%;
+  }
+
+  .all-reviews-container .best-review {
+    width: 100%;
+    padding-inline: 3rem;
+    padding-block: 4.5rem;
+  }
+  .all-reviews-container .best-review > p:nth-child(2) {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    width: 100%;
+  }
+  .all-reviews-container .best-review > h2 {
+    font-size: 1.8rem;
+  }
+  .all-reviews-container .best-review > p:nth-child(4) {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+
+  /* WICHTIG: behebt das horizontale Overflow durch minmax(50rem) */
+  .all-reviews-container .all-reviews {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-inline: 2.5rem;
+    padding-block: 3rem;
+  }
+  .all-reviews-container .all-reviews .box {
+    padding-inline: 2.5rem;
+    padding-block: 2.5rem;
+  }
+
+  .all-reviews-container .show-more-container {
+    padding-inline: 2.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .all-reviews-container .your-journey {
+    width: 100%;
+    padding-inline: 3rem;
+    padding-block: 6rem;
+    margin-top: 3rem;
+  }
+  .all-reviews-container .your-journey > h1 {
+    font-size: 2.6rem;
+  }
+}
+
+/* =====================================================================
+   MOBIL — 430px und darunter
+   Alles kompakt & gut lesbar, Buttons gestapelt.
+   ===================================================================== */
+@media (max-width: 430px) {
+  .all-reviews-container {
+    padding-bottom: 2rem;
+  }
+
+  .all-reviews-container .header {
+    padding-block: 4rem;
+    padding-inline: 1.5rem;
+  }
+  .all-reviews-container .header > h1 {
+    font-size: 2.6rem;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .all-reviews-container .header > p {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    width: 100%;
+  }
+
+  .all-reviews-container .best-review {
+    width: 100%;
+    padding-inline: 1.8rem;
+    padding-block: 3.5rem;
+  }
+  .all-reviews-container .best-review > span {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .all-reviews-container .best-review > p:nth-child(2) {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .all-reviews-container .best-review > h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .all-reviews-container .best-review > p:nth-child(4) {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    width: 100%;
+  }
+
+  .all-reviews-container .all-reviews {
+    gap: 1.2rem;
+    padding-inline: 1.5rem;
+    padding-block: 2.5rem;
+  }
+  .all-reviews-container .all-reviews .box {
+    padding-inline: 1.8rem;
+    padding-block: 2.2rem;
+  }
+  /* lange Namen umbrechen statt überlaufen */
+  .all-reviews-container .all-reviews .box .name-icon-date {
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .all-reviews-container .all-reviews .box .name-icon-date .name-icon > p {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.3rem;
+  }
+  .all-reviews-container .all-reviews .box .name-icon-date .name-icon > h2 {
+    font-size: 1.35rem;
+  }
+  .all-reviews-container .all-reviews .box .name-icon-date > p {
+    font-size: 1.3rem;
+  }
+  .all-reviews-container .all-reviews .box > span {
+    font-size: 1.4rem;
+  }
+  .all-reviews-container .all-reviews .box > p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-top: 1rem;
+  }
+  .all-reviews-container .all-reviews .box > p:nth-child(4) {
+    font-size: 1.35rem;
+    margin-top: 1.2rem;
+  }
+
+  .all-reviews-container .show-more-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-inline: 1.5rem;
+  }
+  .all-reviews-container .show-more-container .show-more,
+  .all-reviews-container .show-more-container .show-less {
+    font-size: 1.4rem;
+  }
+
+  .all-reviews-container .your-journey {
+    padding-inline: 2rem;
+    padding-block: 5rem;
+    margin-top: 2.5rem;
+  }
+  .all-reviews-container .your-journey > h1 {
+    font-size: 2.1rem;
+    letter-spacing: 0;
+    line-height: 2.8rem;
+  }
+  .all-reviews-container .your-journey .btns {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .all-reviews-container .your-journey .btns > button {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    font-size: 1.5rem;
+  }
+}
