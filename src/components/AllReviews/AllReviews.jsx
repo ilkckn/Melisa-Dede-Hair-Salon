@@ -3,17 +3,12 @@ import { useNavigate } from "react-router-dom";
 import "./AllReviews.css";
 import reviewData from "../Reviews/AllReviews.js";
 import { MdOutlineUnfoldMore, MdOutlineUnfoldLess } from "react-icons/md";
-import { SVGOverlay } from "react-leaflet";
 
 const STEP = 4;
 
 const AllReviews = () => {
   const [visibleCount, setVisibleCount] = useState(STEP);
   const navigate = useNavigate();
-
-  const handleShowMore = () => {
-    setVisibleCount((prev) => prev + STEP);
-  };
 
   const showMore = () => {
     setVisibleCount((prev) => prev + STEP);
@@ -81,7 +76,9 @@ const AllReviews = () => {
             </div>
             <span>{renderStars(item.rating)}</span>
             <p>{item.comment}</p>
-            <p className="service">Service: <span>{item.service}</span></p>
+            <p className="service">
+              Service: <span>{item.service}</span>
+            </p>
           </div>
         ))}
       </div>
@@ -102,7 +99,9 @@ const AllReviews = () => {
       <div className="your-journey">
         <h1>Beginne deine Reise hin zu einem verfeinerten Selbstbild.</h1>
         <div className="btns">
-          <button onClick={() => navigate("/appointment")}>einen Termin vereinbaren</button>
+          <button onClick={() => navigate("/appointment")}>
+            einen Termin vereinbaren
+          </button>
           <button onClick={() => navigate("/contact")}>Kontakt mit uns</button>
         </div>
       </div>
