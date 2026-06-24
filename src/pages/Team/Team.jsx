@@ -7,7 +7,7 @@ function Team() {
     <section className="team-container">
       <div className="hero">
         <div className="hero-left">
-          <img src="/dresser/dresser.jpg" alt="" />
+          <img src="/dresser/personal.jpeg" alt="" />
         </div>
         <div className="hero-right">
           <span>Lernen Sie den Künstler kennen</span>

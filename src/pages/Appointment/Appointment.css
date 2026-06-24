@@ -135,7 +135,7 @@
           flex-wrap: wrap;
           gap: 1rem;
 
-          .mon-fri, .sat, .sun, .holidays {
+          .mo,.tue-wed-fri, .thursday, .saturday, .holidays {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
@@ -145,7 +145,7 @@
 
             h2 {
               font-family: var(--font2);
-              font-size: 1.6rem;
+              font-size: 1.4rem;
               font-weight: 400;
               text-transform: uppercase;
               letter-spacing: 1px;

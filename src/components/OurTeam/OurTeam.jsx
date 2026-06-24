@@ -12,7 +12,7 @@ function OurTeam() {
 
       <div className="content">
         <div className="about-img">
-          <img src="/dresser/dresser-1.jpg" alt="Melisa Dede" />
+          <img src="/dresser/personal.jpeg" alt="Melisa Dede" />
         </div>
 
         <div className="about-info">
@@ -21,11 +21,11 @@ function OurTeam() {
 
           <p>
             Seit über 10 Jahren bin ich mit Leidenschaft Friseurin. In meinem
-            Salon arbeite ich allein – das bedeutet für Sie: meine volle
+            Salon arbeite ich allein das bedeutet für Sie: meine volle
             Aufmerksamkeit, von der ersten Beratung bis zum letzten Schnitt.
           </p>
           <p>
-            Ob Schnitt, Farbe oder Pflege – jeder Termin wird individuell auf Sie
+            Ob Schnitt, Farbe oder Pflege jeder Termin wird individuell auf Sie
             abgestimmt. Auf Wunsch sorge ich gerne für eine ruhige, private
             Atmosphäre, in der Sie sich rundum wohlfühlen.
           </p>

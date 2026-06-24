@@ -66,16 +66,20 @@ function Appointment() {
           <div className="opening-hours">
             <h2>Öffnungszeiten</h2>
             <div className="hours-days">
-              <div className="mon-fri">
-                <h2>Mo. – Fr.</h2>
+              <div className="tue-wed-fri">
+                <h2>Dienstag - Mittwoch - Freitag.</h2>
+                <p>09:00 – 18:30 Uhr</p>
+              </div>
+              <div className="thursday">
+                <h2>Donnerstag</h2>
                 <p>09:00 – 19:00 Uhr</p>
               </div>
-              <div className="sat">
+              <div className="saturday">
                 <h2>Samstag</h2>
-                <p>09:00 – 17:00 Uhr</p>
+                <p>09:00 – 14:00 Uhr</p>
               </div>
-              <div className="sun">
-                <h2>Sonntag</h2>
+              <div className="mo">
+                <h2>Montag</h2>
                 <p>Geschlossen</p>
               </div>
               <div className="holidays">
