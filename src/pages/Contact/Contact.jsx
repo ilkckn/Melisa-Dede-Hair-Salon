@@ -56,9 +56,10 @@ function Contact() {
                 <span></span>
                 <p>Öffnungszeiten</p>
               </div>
-              <p>Montag – Freitag: 09:00 – 19:00 Uhr</p>
-              <p>Samstag: 09:00 – 17:00 Uhr</p>
-              <p>Sonntag: Geschlossen</p>
+              <p>Dienstag – Mittwoch - Freitag: 09:00 – 18:30 Uhr</p>
+              <p>Donnerstag: 09:00 – 19:00 Uhr</p>
+              <p>Samstag: 09:00 – 14:00 Uhr</p>
+              <p>Montag: Geschlossen</p>
             </div>
             <div className="contact-info">
               <div className="address">

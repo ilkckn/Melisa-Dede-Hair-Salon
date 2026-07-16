@@ -9,8 +9,7 @@ function Footer() {
           <p>Hair & Beauty</p>
         </div>
         <div className="middle">
-          <p>© 2024 Blanche. All rights reserved.</p>
-          <p className="demo-note">This is a demo project</p>
+          <p>© 2024 Melisa Dede-Hair Salon. All rights reserved.</p>
         </div>
         <div className="right">
           <p>instagram</p>

@@ -1,7 +1,10 @@
 import './LandingHero.css';
+import { useNavigate } from 'react-router-dom';
 import heroImg from '../../assets/images/landing-hero/hero.jpg';
 
 function LandingHero() {
+  const navigate = useNavigate();
+  
   return (
     <>
       <div className="left">
@@ -23,8 +26,8 @@ function LandingHero() {
           </p>
         </article>
         <div className="buttons">
-          <button className="appointment">Termin buchen</button>
-          <button className="services">Leistungen ansehen</button>
+          <button className="appointment" onClick={() => navigate('/appointment')}>Termin buchen</button>
+          <button className="services" onClick={() => navigate('/services')}>Leistungen ansehen</button>
         </div>
       </div>
       <div className="right">

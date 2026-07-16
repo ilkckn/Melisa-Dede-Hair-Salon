@@ -1,8 +1,11 @@
+import "./Team.css";
+import { useNavigate } from "react-router-dom";
 import MyStory from "./MyStory";
 import SkillSet from "./SkillSet";
-import "./Team.css";
 
 function Team() {
+  const navigate = useNavigate();
+  
   return (
     <section className="team-container">
       <div className="hero">
@@ -16,7 +19,7 @@ function Team() {
             "Ich glaube an Schönheit, die sich mühelos anfühlt, und an Haar, das
             eine Geschichte von stiller Raffinesse erzählt."
           </p>
-          <button>Vereinbaren Sie Ihren Termin.</button>
+          <button onClick={() => navigate("/appointment")}>Vereinbaren Sie Ihren Termin.</button>
         </div>
       </div>
 
