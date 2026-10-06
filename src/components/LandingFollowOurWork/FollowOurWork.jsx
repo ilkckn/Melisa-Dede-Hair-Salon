@@ -1,5 +1,4 @@
 import "./FollowOurWork.css";
-import { NavLink } from "react-router-dom";
 import { TbArrowNarrowRight } from "react-icons/tb";
 
 function FollowOurWork() {
@@ -11,11 +10,15 @@ function FollowOurWork() {
       </div>
       <div className="middle">
         <h1>@melisadede.hair</h1>
-        <NavLink to="/#">
+        <a
+          href="https://www.instagram.com/m.d.hairandbeauty"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <p>
             Auf Instagram folgen <TbArrowNarrowRight className="arrow" />
           </p>
-        </NavLink>
+        </a>
       </div>
       <div className="bottom">
         <div className="box">
