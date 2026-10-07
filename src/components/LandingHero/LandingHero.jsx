@@ -7,7 +7,7 @@ function LandingHero() {
   
   return (
     <>
-      <div className="left">
+      <div className="hero-left">
         <article className="first">
           <span></span>
           <h4>
@@ -30,7 +30,7 @@ function LandingHero() {
           <button className="services" onClick={() => navigate('/services')}>Leistungen ansehen</button>
         </div>
       </div>
-      <div className="right">
+      <div className="hero-right">
         <img src={heroImg} alt="Hero" />
       </div>
     </>

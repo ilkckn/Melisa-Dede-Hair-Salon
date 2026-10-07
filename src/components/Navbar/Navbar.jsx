@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/images/logo/logo.png";
-import mobileLogo from "../../assets/images/logo/mobile-logo.png";
+// import logo from "../../assets/images/logo/logo.png";
+// import mobileLogo from "../../assets/images/logo/mobile-logo.png";
 import { BiMenu } from "react-icons/bi";
 
 function Navbar() {

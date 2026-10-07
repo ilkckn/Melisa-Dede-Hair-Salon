@@ -1,9 +1,9 @@
 .scroll-to-top {
   position: fixed;
-  bottom: 8.5rem;
+  bottom: 20rem;
   
   /* Ekranın ortasından 1280px/2 = 640px sağına git, sonra 3rem içeri gel */
-  left: calc(50% + 640px - 4rem);
+  left: calc(50% + 700px - 4rem);
   
   width: 5.5rem;
   height: 5.5rem;

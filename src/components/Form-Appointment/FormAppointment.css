@@ -146,8 +146,8 @@
         width: 100%;
         padding: 1.5rem 0;
         margin-top: 1rem;
-        background-color: var(--sand-400);
-        color: var(--cream);
+        background-color: var(--navbar-background);
+        color: var(--navbar-link);
         border: none;
         border-radius: 0.3rem;
         font-family: var(--font2);

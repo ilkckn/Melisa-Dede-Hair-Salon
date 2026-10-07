@@ -9,10 +9,10 @@ function Team() {
   return (
     <section className="team-container">
       <div className="hero">
-        <div className="hero-left">
+        <div className="team-hero-left">
           <img src="/dresser/personal.jpeg" alt="" />
         </div>
-        <div className="hero-right">
+        <div className="team-hero-right">
           <span>Lernen Sie den Künstler kennen</span>
           <h1>Melisa Dede</h1>
           <p>

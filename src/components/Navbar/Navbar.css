@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: var(--navbar-background);
+  background-color: var(--bg-body);
 
   nav {
     max-width: 1280px;
@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5rem;
-    border-bottom: 1px solid var(--border-navbar);
+    border-bottom: 1px solid var(--bg-body);
     position: relative;
 
     .left {
@@ -76,11 +76,11 @@
               left: 0;
               width: 0;
               height: 1px;
-              background-color: var(--cream);
+              background-color: var(--navbar-background);
               transition: width 0.3s ease;
             }
             &:hover {
-              color: var(--cream);
+              color: var(--navbar-background);
             }
             &:hover::after {
               width: 100%;
@@ -89,34 +89,42 @@
               width: 100%;
             }
             &.active {
-              color: var(--cream);
+              color: var(--navbar-background);
             }
           }
         }
 
         .book-now {
-          width: 12rem;
-          margin-left: 2rem;
-          padding: 0.7rem 1rem;
-          background-color: var(--navbar-link);
-          color: var(--navbar-background);
-          border: 2px solid var(--navbar-link);
-          border-radius: 0.3rem;
-          cursor: pointer;
-          transition: all 0.3s ease;
           font-family: var(--font2);
-          font-weight: 400;
-          font-size: 1.5rem;
+          border: none;
+          width: fit-content;
 
           a {
-            text-decoration: none;
-            color: inherit;
-            letter-spacing: 0.7px;
-          }
-
-          &:hover {
+            font-weight: 400;
+            font-size: 1.5rem;
+            width: 15rem;
+            padding: 0.7rem 2rem;
             background-color: var(--navbar-link);
             color: var(--navbar-background);
+            border: 2px solid var(--navbar-link);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            letter-spacing: 0.7px;
+
+            &.active {
+              background-color: var(--navbar-background);
+              color: var(--navbar-link);
+              border: 2px solid var(--navbar-background);
+              border-radius: .3rem;
+            }
+
+            &:hover {
+              background-color: var(--navbar-background);
+              color: var(--navbar-link);
+              border: 2px solid var(--navbar-background);
+              border-radius: 0.3rem;
+            }
           }
         }
 
@@ -217,7 +225,8 @@
         width: 100%;
         height: auto;
         padding: 5rem 0;
-        background-color: var(--navbar-background);
+        background-color: var(--bg-body);
+        border-top: 1px solid var(--border);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -250,7 +259,7 @@
               letter-spacing: 1px;
 
               &.active {
-                color: var(--cream);
+                color: var(--sand-500);
               }
             }
           }

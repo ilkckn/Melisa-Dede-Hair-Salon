@@ -3,8 +3,8 @@
   flex-direction: column;
   gap: 2rem;
   padding: 5rem 7rem;
-  border-bottom: 1px solid var(--sand-400);
-  background-color: var(--sand-100);
+  border-bottom: 1px solid var(--bg-body);
+  background-color: var(--bg-body);
 
   .form-heading {
     display: flex;
