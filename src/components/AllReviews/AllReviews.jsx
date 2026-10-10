@@ -6,6 +6,29 @@ import { MdOutlineUnfoldMore, MdOutlineUnfoldLess } from "react-icons/md";
 
 const STEP = 4;
 
+const rtf = new Intl.RelativeTimeFormat("de", { numeric: "always" });
+
+// Wandelt ein ISO-Datum (z. B. "2026-06-12") in "vor X Monaten" etc. um
+const timeAgo = (dateString) => {
+  const diffSeconds = Math.round((new Date(dateString) - new Date()) / 1000); // negativ = Vergangenheit
+
+  const units = [
+    ["year", 60 * 60 * 24 * 365],
+    ["month", 60 * 60 * 24 * 30],
+    ["week", 60 * 60 * 24 * 7],
+    ["day", 60 * 60 * 24],
+    ["hour", 60 * 60],
+    ["minute", 60],
+  ];
+
+  for (const [unit, seconds] of units) {
+    if (Math.abs(diffSeconds) >= seconds) {
+      return rtf.format(Math.round(diffSeconds / seconds), unit);
+    }
+  }
+  return "gerade eben";
+};
+
 const AllReviews = () => {
   const [visibleCount, setVisibleCount] = useState(STEP);
   const navigate = useNavigate();
@@ -72,7 +95,7 @@ const AllReviews = () => {
                 <p>{item.name_icon}</p>
                 <h2>{item.name}</h2>
               </div>
-              <p>{item.date}</p>
+              <p>{timeAgo(item.date)}</p>
             </div>
             <span>{renderStars(item.rating)}</span>
             <p>{item.comment}</p>
@@ -84,14 +107,14 @@ const AllReviews = () => {
       </div>
 
       <div className="show-more-container">
-        {hasMore && (
-          <button className="show-more" onClick={showMore}>
-            Mehr anzeigen <MdOutlineUnfoldMore />
-          </button>
-        )}
         {visibleCount > STEP && (
           <button className="show-less" onClick={showLess}>
             weniger anzeigen <MdOutlineUnfoldLess />
+          </button>
+        )}
+        {hasMore && (
+          <button className="show-more" onClick={showMore}>
+            Mehr anzeigen <MdOutlineUnfoldMore />
           </button>
         )}
       </div>

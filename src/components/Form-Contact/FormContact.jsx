@@ -27,6 +27,12 @@ function FormContact() {
       return;
     }
     setIsSubmitting(true);
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (
