@@ -10,12 +10,11 @@ function Footer() {
     <footer className="footer-main">
       <div className="footer-content">
         <div className="footer-brand">
-          <p>Hair & Beauty</p>
-          <h2>Melisa Dede</h2>
+          <img src="/logo/blanche-footer.svg" alt="" />
         </div>
 
         <div className="footer-info">
-          <p>© {year} Melisa Dede Hair & Beauty. Alle Rechte vorbehalten.</p>
+          <p>© {year} Blanche Hair & Beauty. Alle Rechte vorbehalten.</p>
           <p className="footer-credit">
             Webdesign by{" "}
             <a

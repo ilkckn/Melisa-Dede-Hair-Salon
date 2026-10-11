@@ -4,6 +4,12 @@ import reviewData from "./AllReviews.js";
 
 const rtf = new Intl.RelativeTimeFormat("de", { numeric: "always" });
 
+// import'ların altına
+const average = (
+  reviewData.reviews.reduce((sum, r) => sum + r.rating, 0) /
+  reviewData.reviews.length
+).toFixed(1);
+
 // Wandelt ein ISO-Datum (z. B. "2026-06-12") in "vor X Monaten" etc. um
 const timeAgo = (dateString) => {
   const diffSeconds = Math.round((new Date(dateString) - new Date()) / 1000); // negativ = Vergangenheit
@@ -60,9 +66,10 @@ function Reviews() {
       </div>
       <div className="middle">
         <h1>Bewertungen</h1>
+        // review-points bölümü
         <div className="review-points">
-          <p>5.0</p>
-          <span>/ bei Google</span>
+          <p>{average}</p>
+          <span>/ 5 Sterne</span>
         </div>
       </div>
       <div className="bottom">
