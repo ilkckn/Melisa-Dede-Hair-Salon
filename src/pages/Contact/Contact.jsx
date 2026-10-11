@@ -17,7 +17,7 @@ const SALON = {
   address: "Musterstraße 12, 79539 Lörrach",
   phone: "+49 7621 000000",
   email: "info@example.com",
-  position: [47.6167, 7.6667], // Platzhalter: Zentrum von Lörrach
+  position: [47.6167, 7.6667], // Platzhalter: Zentrum von Lörrach 
 };
 
 const defaultIcon = L.icon({
