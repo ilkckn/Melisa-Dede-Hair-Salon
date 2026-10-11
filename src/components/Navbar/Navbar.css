@@ -5,6 +5,7 @@
   left: 0;
   z-index: 1000;
   background-color: var(--bg-body);
+  border-bottom: 1px solid var(--navbar-background);
 
   nav {
     max-width: 1280px;
