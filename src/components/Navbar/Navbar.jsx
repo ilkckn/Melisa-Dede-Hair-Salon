@@ -25,7 +25,7 @@ function Navbar() {
         <div className="left">
           <div className="logo">
             <NavLink to="/">
-              <img src="/logo/logo.png" alt="Logo" />
+              <img src="/logo/blanche-navbar.svg" alt="Logo" />
             </NavLink>
           </div>
         </div>

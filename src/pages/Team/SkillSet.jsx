@@ -7,32 +7,32 @@ const SkillSet = () => {
   return (
     <section className="skill-set-container">
       <div className="header">
-        <p>berufliche Meisterschaft</p>
+        <p>unsere Stärken</p>
         <h1>das Kompetenzprofil</h1>
       </div>
       <div className="skills">
         <div className="skill">
           <IoColorPaletteOutline />
-          <h2>Meister-Colorist</h2>
+          <h2>Farbe &amp; Balayage</h2>
           <p>
-            Spezialisiert auf handgemalte Balayage-Techniken und nuancenreiche
-            Blondtöne, die natürliches, von der Sonne geküsstes Haar imitieren.
+            Von sanften Balayage-Verläufen bis zu nuancenreichen Blondtönen:
+            natürlich, strahlend und individuell auf Sie abgestimmt.
           </p>
         </div>
         <div className="skill">
           <FiScissors />
           <h2>Präzisionsschnitt</h2>
           <p>
-            Expertise in Trockenschnitttechniken, die die natürliche Textur
-            respektieren und eine langanhaltende Formgebung fördern.
+            Schnitte, die die natürliche Textur respektieren, gut fallen und
+            auch nach Wochen noch in Form bleiben.
           </p>
         </div>
         <div className="skill">
           <PiFlowerLotusLight />
           <h2>Kopfhaut-Wellness</h2>
           <p>
-            Integration therapeutischer Kopfhautrituale und maßgeschneiderter
-            Behandlungen für ganzheitliche Haargesundheit von der Wurzel an.
+            Wohltuende Kopfhautmassagen und maßgeschneiderte
+            Pflegebehandlungen für gesundes Haar von der Wurzel an.
           </p>
         </div>
       </div>

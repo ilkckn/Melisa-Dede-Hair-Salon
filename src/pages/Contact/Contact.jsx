@@ -9,6 +9,17 @@ import FormContact from "../../components/Form-Contact/FormContact";
 import { MdLocationPin, MdOutlineEmail } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
 
+// ⚠️ DEMO-INHALT: Alle Angaben unten sind Platzhalter.
+// Vor dem Livegang durch die echten Daten des Salons ersetzen
+// (Adresse, Telefon, E-Mail, Öffnungszeiten, Kartenposition).
+const SALON = {
+  name: "Blanche",
+  address: "Musterstraße 12, 79539 Lörrach",
+  phone: "+49 7621 000000",
+  email: "info@example.com",
+  position: [47.6167, 7.6667], // Platzhalter: Zentrum von Lörrach
+};
+
 const defaultIcon = L.icon({
   iconUrl: markerIcon,
   iconRetinaUrl: markerIcon2x,
@@ -20,12 +31,10 @@ const defaultIcon = L.icon({
 });
 
 function Contact() {
-  const position = [47.6234, 7.674];
+  const { name, address, phone, email, position } = SALON;
 
-  const address = "Brombacherstr. 66, 79539 Lörrach";
-  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-    address,
-  )}&travelmode=driving`;
+  // Route anhand der Koordinaten, solange die Adresse nur ein Platzhalter ist
+  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${position[0]},${position[1]}&travelmode=driving`;
 
   const openDirections = () => {
     window.open(directionsUrl, "_blank", "noopener,noreferrer");
@@ -43,7 +52,7 @@ function Contact() {
             <h1>Finden Sie uns,</h1>
             <h1>besuchen Sie uns,</h1>
           </div>
-          <h1>Liebt uns.</h1>
+          <h1>lieben Sie uns.</h1>
         </div>
       </section>
       <section className="section-bottom">
@@ -56,9 +65,9 @@ function Contact() {
                 <span></span>
                 <p>Öffnungszeiten</p>
               </div>
-              <p>Dienstag – Mittwoch - Freitag: 09:00 – 18:30 Uhr</p>
-              <p>Donnerstag: 09:00 – 19:00 Uhr</p>
-              <p>Samstag: 09:00 – 14:00 Uhr</p>
+              <p>Dienstag – Mittwoch – Freitag: 09:00 – 18:00 Uhr</p>
+              <p>Donnerstag: 10:00 – 20:00 Uhr</p>
+              <p>Samstag: 09:00 – 15:00 Uhr</p>
               <p>Montag: Geschlossen</p>
             </div>
             <div className="contact-info">
@@ -67,8 +76,8 @@ function Contact() {
                   <MdLocationPin />
                 </div>
                 <div className="info">
-                  <h2>address</h2>
-                  <p>Brombacherstr. 66, 79539 Lörrach</p>
+                  <h2>Adresse</h2>
+                  <p>{address}</p>
                 </div>
               </div>
               <div className="phone">
@@ -76,8 +85,8 @@ function Contact() {
                   <LuPhone />
                 </div>
                 <div className="info">
-                  <h2>phone</h2>
-                  <p>+49 761 123456</p>
+                  <h2>Telefon</h2>
+                  <p>{phone}</p>
                 </div>
               </div>
               <div className="email">
@@ -85,8 +94,8 @@ function Contact() {
                   <MdOutlineEmail />
                 </div>
                 <div className="info">
-                  <h2>email</h2>
-                  <p>melisa.dede1@hotmail.com</p>
+                  <h2>E-Mail</h2>
+                  <p>{email}</p>
                 </div>
               </div>
             </div>
@@ -95,7 +104,7 @@ function Contact() {
           <div className="location">
             <div className="location-heading">
               <span></span>
-              <p>Location</p>
+              <p>Standort</p>
             </div>
             <MapContainer
               center={position}
@@ -112,12 +121,8 @@ function Contact() {
                 eventHandlers={{ click: openDirections }}
               >
                 <Tooltip direction="top" offset={[0, -38]}>
-                  <strong style={{ fontSize: "1.4rem" }}>
-                    Melisa Dede Hair &amp; Beauty
-                  </strong>
-                  <p style={{ fontSize: "1.3rem" }}>
-                    Brombacherstr. 66, 79539 Lörrach
-                  </p>
+                  <strong style={{ fontSize: "1.4rem" }}>{name}</strong>
+                  <p style={{ fontSize: "1.3rem" }}>{address}</p>
                   <em style={{ fontSize: "1.2rem" }}>Klicken für Route →</em>
                 </Tooltip>
               </Marker>

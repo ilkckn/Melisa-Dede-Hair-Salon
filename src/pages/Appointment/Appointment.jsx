@@ -2,6 +2,23 @@ import FormAppointment from "../../components/Form-Appointment/FormAppointment";
 import "./Appointment.css";
 import { useState } from "react";
 
+// ⚠️ DEMO-INHALT: Kontaktdaten und Öffnungszeiten sind Platzhalter.
+// Vor dem Livegang durch die echten Daten des Salons ersetzen.
+const CONTACT = {
+  address: "Musterstraße 12, 79539 Lörrach",
+  phone: "+49 7621 000000",
+  email: "info@example.com",
+};
+
+const SERVICES = [
+  "Damenhaarschnitt",
+  "Herrenhaarschnitt",
+  "Färbung",
+  "Balayage",
+  "Fade & Bart",
+  "Behandlung",
+];
+
 function Appointment() {
   const [selectedService, setSelectedService] = useState([]);
 
@@ -25,13 +42,14 @@ function Appointment() {
           <p>Reservieren Sie Ihren Termin</p>
         </div>
         <div className="appointment-heading">
-          <h1>Buchen Sie ein</h1>
+          <h1>Buchen Sie einen</h1>
           <h1>Termin</h1>
         </div>
         <div className="appointment-description">
           <p>
             Jeder Besuch beginnt mit einem Gespräch. Wählen Sie Ihren Service,
-            wählen Sie Ihr Stylist und wir kümmern uns um den Rest.
+            wählen Sie Ihre Stylistin oder Ihren Stylisten und wir kümmern uns
+            um den Rest.
           </p>
         </div>
       </section>
@@ -44,21 +62,21 @@ function Appointment() {
               <div className="icon">📍</div>
               <div className="info">
                 <h2>Adresse</h2>
-                <p>Brombacherstr 66, 79539 Lörrach</p>
+                <p>{CONTACT.address}</p>
               </div>
             </div>
             <div className="phone">
               <div className="icon">📞</div>
               <div className="info">
                 <h2>Telefon</h2>
-                <p>+49 761 123456</p>
+                <p>{CONTACT.phone}</p>
               </div>
             </div>
             <div className="email">
               <div className="icon">📧</div>
               <div className="info">
                 <h2>Email</h2>
-                <p>melisa.dede1@hotmail.com</p>
+                <p>{CONTACT.email}</p>
               </div>
             </div>
           </div>
@@ -67,16 +85,16 @@ function Appointment() {
             <h2>Öffnungszeiten</h2>
             <div className="hours-days">
               <div className="tue-wed-fri">
-                <h2>Dienstag - Mittwoch - Freitag.</h2>
-                <p>09:00 – 18:30 Uhr</p>
+                <h2>Dienstag – Mittwoch – Freitag</h2>
+                <p>09:00 – 18:00 Uhr</p>
               </div>
               <div className="thursday">
                 <h2>Donnerstag</h2>
-                <p>09:00 – 19:00 Uhr</p>
+                <p>10:00 – 20:00 Uhr</p>
               </div>
               <div className="saturday">
                 <h2>Samstag</h2>
-                <p>09:00 – 14:00 Uhr</p>
+                <p>09:00 – 15:00 Uhr</p>
               </div>
               <div className="mo">
                 <h2>Montag</h2>
@@ -93,29 +111,20 @@ function Appointment() {
 
         <div className="content-right">
           <h2>
-            Reservieren Sie Ihr <span>Stelle</span>
+            Reservieren Sie Ihren <span>Platz</span>
           </h2>
           <div className="select-a-service">
             <h2 className="select-service">Wählen Sie einen Service aus</h2>
             <div className="appointment-services">
-              <div className="appointment-services">
-                {[
-                  "Damenhaarschnitt",
-                  "Herrenhaarschnitt.",
-                  "Färbung",
-                  "Balayage",
-                  "Fade & Bart",
-                  "Behandlung",
-                ].map((service) => (
-                  <div
-                    key={service}
-                    className={`box ${selectedService.includes(service) ? "active" : ""}`}
-                    onClick={() => toggleService(service)}
-                  >
-                    <p>{service}</p>
-                  </div>
-                ))}
-              </div>
+              {SERVICES.map((service) => (
+                <div
+                  key={service}
+                  className={`box ${selectedService.includes(service) ? "active" : ""}`}
+                  onClick={() => toggleService(service)}
+                >
+                  <p>{service}</p>
+                </div>
+              ))}
             </div>
           </div>
           <FormAppointment
